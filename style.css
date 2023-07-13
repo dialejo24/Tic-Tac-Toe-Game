@@ -86,3 +86,30 @@ h1 {
     cursor:pointer;  
     margin-top:1em;  
 }
+
+div[data-key] {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog {
+    opacity: 0;
+    scale: 0;
+    display: block;
+    transition: all 1.5s;
+    margin: auto;
+    outline: 2px solid rgb(27, 132, 134 );
+    border:none;
+    border-radius: 10px;
+    padding: .5em 1em;
+}
+
+dialog[open] {
+    opacity: 1;
+    scale: 2;
+}
